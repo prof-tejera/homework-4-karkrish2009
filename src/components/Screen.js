@@ -1,7 +1,7 @@
 import '../App.css';
 
 const Screen = ({ value }) => {
-  console.log("In screen ", value);
+  //console.log("In screen ", value);
   return (
     <div
     style={{
@@ -15,7 +15,7 @@ const Screen = ({ value }) => {
         color: "#eee",
         fontSize: "24px",
         fontWeight: 300,
-      }} 
+      }}
     >
       {value}
     </div>

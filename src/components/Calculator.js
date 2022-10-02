@@ -113,32 +113,32 @@ const Calculator = () => {
 
       // if no previous operator exists - then return the number as is
       if (prev_operator === false){
-        console.log("no previous operator");
+        //console.log("no previous operator");
         return;
       }
 
       // if there is an existing operator - we need to evaluate and store and
       // display the result
       else {
-        console.log("existing_operator", existing_operator);
+        //console.log("existing_operator", existing_operator);
 
         // parsing number into three parts
         // number 1
         // operator
         // number 2
         let operator_index = number.indexOf(existing_operator);
-        console.log(operator_index);
+        //console.log(operator_index);
         let first_number = number.slice(0,operator_index);
         let operator = number[operator_index];
         let second_number = number.slice(operator_index + 1);
-        console.log("first number", first_number);
-        console.log("second_number", second_number);
-        console.log("operator", operator);
+        //console.log("first number", first_number);
+        //console.log("second_number", second_number);
+        //console.log("operator", operator);
 
         // send to our evaluating internal helper function
         // get result
         let result = evaluating(first_number, second_number, operator);
-        console.log("I am here")
+        //console.log("I am here")
 
         // setNumber (result)
         setNumber(result);
@@ -179,30 +179,30 @@ const Calculator = () => {
       // if no previous operator exists - then concat operator to the
       // nunber string and display
       if (prev_operator === false){
-        console.log("no previous operator");
+        //console.log("no previous operator");
         setNumber(number + userInput);
       }
       else {
 
-        console.log("existing_operator", existing_operator);
+        //console.log("existing_operator", existing_operator);
 
         // parsing number into three parts
         // number 1
         // operator
         // number 2
         let operator_index = number.indexOf(existing_operator);
-        console.log(operator_index);
+        //console.log(operator_index);
         let first_number = number.slice(0,operator_index);
         let operator = number[operator_index];
         let second_number = number.slice(operator_index + 1);
-        console.log("first number", first_number);
-        console.log("second_number", second_number);
-        console.log("operator", operator);
+        //console.log("first number", first_number);
+        //console.log("second_number", second_number);
+        //console.log("operator", operator);
 
         // send to our evaluating internal helper function
         // get result
         let result = evaluating(first_number, second_number, operator);
-        console.log("I am here")
+        //console.log("I am here")
 
         // setNumber (result + new operator input by the user)
         setNumber(result + userInput);
