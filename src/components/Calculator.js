@@ -17,7 +17,7 @@ const Calculator = () => {
     for (let i = 0; i < 10; i++)
     {
       nbr.push(
-          <Number value={i.toString()} onClick={handleNumberClick} />
+          <Number key={i} value={i.toString()} onClick={handleNumberClick} />
       )
     }
 
