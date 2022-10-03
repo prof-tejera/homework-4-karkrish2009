@@ -62,8 +62,8 @@ const Calculator = () => {
       // helper function that takes first, second number and operator
 
       // as numbers are strings - I convert to integer with parseInt
-      let n1 = parseInt(first_number);
-      let n2 = parseInt(second_number);
+      let n1 = parseFloat(first_number);
+      let n2 = parseFloat(second_number);
 
       // switch implemented as collection of if-else
 
