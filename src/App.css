@@ -1,0 +1,60 @@
+.App {
+  display: flex;
+  min-height: 100vh;
+  align-items: center;
+  justify-content: center;
+}
+
+.calculator {
+  width: 100%;
+  max-width: 400px;
+  background-color: #FFF;
+  border-radius: 16px;
+  overflow: hidden;
+  box-shadow: 0px 2px 64px rgba(0, 0, 0, 0.2);
+}
+
+button {
+  appearance: none;
+  border: none;
+  outline: none;
+  color: #E1D9D1;
+  font-size: 20px;
+  padding: 16px;
+  cursor: pointer;
+  transition: 0.4s;
+  text-align: left;
+}
+
+button:hover {
+  background-color: #808080;
+  color: #000;
+   opacity: 0.01%;
+}
+
+.operators {
+  display: flex;
+  padding-left: 0;
+}
+
+.operators button {
+ flex: 1 1 0%;
+ background-color: #d81e5b;
+ font-weight: 700;
+}
+
+
+.numbers {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.numbers button {
+  flex: 1 1 33.333%;
+  max-width: 33.333%;
+  background-color: #131a26;
+  font-weight: 700;
+
+}
+
+
